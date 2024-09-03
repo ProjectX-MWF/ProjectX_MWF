@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBE Breakup Update</title>
+</head>
+<body>
+    <h1>Update DBE Breakup</h1>
+    <form action="{{ url_for('update') }}" method="post">
+        <label for="headcount">Headcount:</label>
+        <input type="number" id="headcount" name="headcount" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
