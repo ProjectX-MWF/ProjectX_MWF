@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Login</h1>
-    </header>
     <div class="main-container">
         <div class="spinner-box">
             <div class="leo-border-1">
@@ -20,18 +17,21 @@
                 <div class="leo-core-2"></div>
             </div>
         </div>
-        <div class="container">
-            <form id="dataForm" action="/login" method="post"> <!-- Adjust action URL and method as needed -->
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                <br>
-                <button class="bubbly-button" type="submit">Login</button>
-            </form>
+        <div class="login-form-container">
+            <header>
+                <h1>Login</h1>
+            </header>
+            <div class="container">
+                <form id="dataForm" action="/login" method="post"> <!-- Adjust action URL and method as needed -->
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <button class="bubbly-button" type="submit">Login</button>
+                </form>
+            </div>
         </div>
     </div>
-    <script src=https://github.com/ProjectX-MWF/ProjectX_MWF/blob/Front-End/Assets/Samples/script.js></script> <!-- Linking the JavaScript file -->
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
 </body>
 </html>
