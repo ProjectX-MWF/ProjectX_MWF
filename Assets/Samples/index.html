@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div class="main-container">
+        <div class="spinner-box">
+            <div class="leo-border-1">
+                <div class="leo-core-1"></div>
+            </div>
+            <div class="leo-border-2">
+                <div class="leo-core-2"></div>
+            </div>
+        </div>
+        <div class="container">
+            <form id="dataForm" action="/login" method="post"> <!-- Adjust action URL and method as needed -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <br>
+                <button class="bubbly-button" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
