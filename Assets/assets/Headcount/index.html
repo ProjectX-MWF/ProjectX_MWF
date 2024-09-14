@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Requirement Form</h1>
+    <form id="requirementForm">
+        <label for="identifier">Identifier:</label>
+        <input type="text" id="identifier" name="identifier" required>
+        <button type="button" id="fetchButton">Fetch Requirements</button><br><br>
+
+        <label for="requirements">Requirements:</label><br>
+        <textarea id="requirements" name="requirements" rows="4" cols="50" readonly></textarea><br><br>
+
+        <label for="changes">Changes:</label><br>
+        <textarea id="changes" name="changes" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" id="submitButton">Submit Changes</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
