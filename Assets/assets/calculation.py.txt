@@ -1,0 +1,31 @@
+import openpyxl
+
+# Load the workbook and select the active sheet
+wb = openpyxl.load_workbook('calculations.xlsx')
+sheet = wb.active
+
+def get_formula_by_id(identifier):
+    # Iterate through rows to find the formula corresponding to the given ID
+    for row in sheet.iter_rows(values_only=True):
+        if row[0] == identifier:
+            return row[1]
+    return None
+
+def calculate_formula(formula, variables):
+    # Evaluate the formula with the given variables (a, b, c, etc.)
+    try:
+        result = eval(formula, {}, variables)
+        return result
+    except Exception as e:
+        return f"Error in formula calculation: {e}"
+
+# Example usage
+identifier = '002'
+formula = get_formula_by_id(identifier)
+
+if formula:
+    variables = {'a': 5, 'b': 3, 'c': 2}  # Example variables
+    result = calculate_formula(formula, variables)
+    print(f"Result: {result}")
+else:
+    print(f"Formula not found for ID {identifier}")

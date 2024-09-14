@@ -2,34 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>HeadCount Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
 </head>
-    
 <body>
-    <div class="spinner-box">
-        <div class="leo-border-1">
-            <div class="leo-core-1"></div>
+    <div class="main-container">
+        <div class="spinner-box">
+            <div class="leo-border-1">
+                <div class="leo-core-1"></div>
+            </div>
+            <div class="leo-border-2">
+                <div class="leo-core-2"></div>
+            </div>
         </div>
-        <div class="leo-border-2">
-            <div class="leo-core-2"></div>
+        <div class="login-form-container">
+            <header>
+                <h1>Login</h1>
+            </header>
+            <div class="container">
+                <form id="dataForm" action="/login" method="post"> <!-- Adjust action URL and method as needed -->
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <button class="bubbly-button" type="submit">Login</button>
+                </form>
+<div id="message"></div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <h1>Headcount</h1>
-        <select name="Project_code" id="project_code">
-            <option value="">Select Project Name</option>
-            <option value="hr">HMA</option>
-            <option value="it">Sony</option>
-            <option value="finance">justanswer</option>
-            <option value="marketing">activision</option>
-        </select>
-        <form>
-            <input type="text" name="Headcount" placeholder="Enter Headcount">
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
 </body>
 </html>
